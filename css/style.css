@@ -1,0 +1,214 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  /* font-family: 'Tilt Neon', sans-serif; */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 42px;
+  margin: 60px 0;
+}
+
+h2 strong {
+  font-size: 50px;
+}
+
+section {
+  min-height: 100vh;
+  padding: 50px 0;
+}
+
+/* start HEADER */
+.header {
+  padding: 30px 0;
+  background-color: #2d1273;
+}
+
+.header menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header__item {
+  list-style: none;
+}
+
+.header__link {
+  padding: 20px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  border-bottom: 2px solid transparent;
+  transition: all .3s ease-in-out;
+}
+
+.header__link:hover {
+  border-bottom: 2px solid #fff;
+}
+/* end HEADER */
+
+/* start ABOUT ME */
+.about-me {
+  background-color: #bfe1f0;
+}
+
+.about-me__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.about-me__info-block {
+  width: 600px;
+}
+
+.about-me__desc {
+  margin-bottom: 30px;
+}
+
+.about-me__btn {
+  display: block;
+  padding: 20px 30px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  background-color: #2d1273;
+  border: 2px solid #2d1273;
+  border-radius: 50px;
+  transition: all .3s ease-in-out;
+  margin-top: 50px;
+}
+
+.about-me__btn:hover {
+  color: #2d1273;
+  background-color: #fff;
+}
+
+.about-me__images {
+  position: relative;
+}
+
+.about-me__images::before,
+.about-me__images::after {
+  position: absolute;
+  content: '';
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-me__images::before {
+  background-image: url(../assets/img/about-me__kharkov.png);
+  top: -250px;
+  right: 50px;
+}
+
+.about-me__images::after {
+  background-image: url(../assets/img/about-me__praha.jpg);
+  top: -40px;
+  right: -200px;
+}
+/* end ABOUT ME */
+
+/* start HILLEL */
+.hillel {
+  background-image: url(../assets/img/hillel-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hillel__text-block {
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 30px;
+}
+
+.hillel__text {
+  margin-bottom: 30px;
+}
+/* end HILLEL */
+
+/* start FULL STACK JS */
+.full-stack-js__text {
+  margin-bottom: 30px;
+}
+
+.full-stack-js__info-block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
+  padding: 30px 0;
+}
+
+.full-stack-js__subtitle {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.full-stack-js__item {
+  margin-bottom: 20px;
+  list-style: none;
+  position: relative;
+}
+
+.full-stack-js__item::before {
+  position: absolute;
+  content: '';
+  width: 25px;
+  height: 25px;
+  background-image: url(../assets/img/check.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 10px;
+  left: -40px;
+}
+
+.full-stack-js__img {
+  width: 500px;
+  height: 300px;
+  border-radius: 15px;
+}
+/* end FULL STACK JS */
+
+/* start FOOTER */
+.footer {
+  background-color: #2e3f9e;
+  text-align: center;
+  color: #fff;
+  padding: 30px 0;
+}
+/* end FOOTER */
